@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function Skill() {
+function Skill({ image, skill }) {
   return (
-    <div className='flex gap-5 items-center p-2 px-6 m-7 w-max bg-gray-950 rounded-md hover:shadow-gray-700 shadow transition-all duration-300'>
-        <img src='../../src/assets/skillLogos/c++.svg' className='w-14'/>
-        <div>C++</div>
+    <div className="grid grid-flow-col items-center gap-10 content-center p-2 px-7 m-7 w-100 bg-gray-950 rounded-md hover:shadow-gray-700 shadow transition-all duration-300">
+      <img src={image} className="w-14" />
+      <div>{skill}</div>
     </div>
-  )
+  );
 }
 
-export default Skill
+export default Skill;
