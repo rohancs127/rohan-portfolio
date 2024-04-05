@@ -1,5 +1,8 @@
 import React from "react";
 import SkillSection from "./SkillSection";
+import About from "./About";
+import Project from "./Project";
+import Contact from "./Contact";
 
 function Home() {
   return (
@@ -18,6 +21,15 @@ function Home() {
       </div>
       <div className="py-32">
         <SkillSection />
+      </div>
+      <div>
+        <About />
+      </div>
+      <div>
+        <Project />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );
