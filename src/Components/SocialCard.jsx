@@ -1,15 +1,10 @@
 import React from "react";
 
-function SocialCard() {
+function SocialCard({ logo, account }) {
   return (
-    <div>
-      <div className="flex items-center p-10 border-violet-300 shadow-sky-400">
-        <img
-          src="../../src/assets/socialMediaLogo/facebook.svg"
-          className="w-14"
-        />
-        <h3>username</h3>
-      </div>
+    <div className="flex items-center justify-center px-5 py-1 bg-slate-300 w-40">
+      <img src={logo} className="w-14" />
+      <h3>{account}</h3>
     </div>
   );
 }
