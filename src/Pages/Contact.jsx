@@ -3,7 +3,7 @@ import SocialCard from "../Components/SocialCard";
 
 function Contact() {
   return (
-    <div>
+    <div className="py-64">
       <div className="flex justify-center p-10">
         <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300">
           Contact Me
