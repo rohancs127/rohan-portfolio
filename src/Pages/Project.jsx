@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import ProjectCard from "../Components/ProjectCard";
 
 function Project() {
   return (
@@ -8,8 +9,15 @@ function Project() {
           My Works
         </h1>
       </div>
+      <div>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Project
+export default Project;
