@@ -9,7 +9,7 @@ function Project() {
           My Works
         </h1>
       </div>
-      <div>
+      <div className="grid grid-cols-4 gap-4 px-10">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
