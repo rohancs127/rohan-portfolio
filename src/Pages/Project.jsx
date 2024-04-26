@@ -9,7 +9,8 @@ function Project() {
           My Works
         </h1>
       </div>
-      <div className="grid grid-cols-4 gap-4 px-10">
+      <div className="grid grid-cols-4 gap-16 px-20">
+        <ProjectCard />
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
