@@ -5,7 +5,7 @@ const navbarComponentStyle =
 
 const Navbar = () => {
   return (
-    <div className="flex justify-end items-center gap-20 bg-purple-950 py-4 w-full px-10 mt-0 h-min fixed top-0">
+    <div className="flex justify-end items-center gap-20 bg-purple-950 py-4 w-full px-10 mt-0 h-min fixed z-10 top-0">
       <ul className={navbarComponentStyle}>Home</ul>
       <ul className={navbarComponentStyle}>Skills</ul>
       <ul className={navbarComponentStyle}>About Me</ul>
