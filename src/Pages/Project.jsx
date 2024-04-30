@@ -9,13 +9,19 @@ function Project() {
           My Works
         </h1>
       </div>
-      <div className="grid grid-cols-4 gap-16 px-20">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+      <div className="flex gap-20 justify-center">
+        <ProjectCard
+          projectName="Deepfake Voice Detection"
+          projectLink="https://github.com/rohancs127/Deepfake_voice_detection"
+        />
+        <ProjectCard
+          projectName="ResQL - Catostrophe Management System"
+          projectLink="https://github.com/rohancs127/ResQL"
+        />
+        <ProjectCard
+          projectName="Certificate Generator"
+          projectLink="https://github.com/rohancs127/Certificate-generator"
+        />
       </div>
     </div>
   );
