@@ -9,7 +9,7 @@ function Contact() {
           Contact Me
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center gap-10">
+      <div className="flex flex-wrap justify-center gap-10 mt-10">
         <SocialCard
           logo="../../src/assets/socialMediaLogo/github.svg"
           account="GitHub"
