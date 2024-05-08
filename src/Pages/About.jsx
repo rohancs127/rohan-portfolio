@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeSection from "../Components/ResumeSection";
 
 function About() {
   return (
@@ -12,6 +13,7 @@ function About() {
           Computer Science and Engineering. I'm interested in the field of Web
           development. I have a good understanding in programming languages.
         </div>
+        <ResumeSection />
       </div>
     </div>
   );
