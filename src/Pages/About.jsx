@@ -1,5 +1,6 @@
 import React from "react";
 import ResumeSection from "../Components/ResumeSection";
+import MoreInfo from "../Components/MoreInfo";
 
 function About() {
   return (
@@ -13,6 +14,7 @@ function About() {
           Computer Science and Engineering. I'm interested in the field of Web
           development. I have a good understanding in programming languages.
         </div>
+        <MoreInfo />
         <ResumeSection />
       </div>
     </div>
