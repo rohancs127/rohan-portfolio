@@ -5,7 +5,7 @@ import MoreInfo from "../Components/MoreInfo";
 function About() {
   return (
     <div className="py-44">
-      <div className="text-center flex-col gap-10">
+      <div className="text-center flex-col gap-10 items-start">
         <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 inline-block">
           Know Me
         </h1>
@@ -14,7 +14,9 @@ function About() {
           Computer Science and Engineering. I'm interested in the field of Web
           development. I have a good understanding in programming languages.
         </div>
-        <MoreInfo />
+        <div className="py-10">
+          <h2 className="text-xl bg-gray-900">Education</h2>
+        </div>
         <ResumeSection />
       </div>
     </div>
