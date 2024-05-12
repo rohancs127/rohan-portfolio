@@ -1,6 +1,7 @@
 import React from "react";
 import ResumeSection from "../Components/ResumeSection";
 import MoreInfo from "../Components/MoreInfo";
+import { ChevronDown } from "lucide-react";
 
 function About() {
   return (
@@ -14,8 +15,9 @@ function About() {
           Computer Science and Engineering. I'm interested in the field of Web
           development. I have a good understanding in programming languages.
         </div>
-        <div className="py-10">
+        <div className="my-10 flex justify-center gap-5 items-center cursor-pointer">
           <h2 className="text-xl">Education</h2>
+          <ChevronDown />
         </div>
         <ResumeSection />
       </div>
