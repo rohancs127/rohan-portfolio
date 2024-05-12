@@ -15,7 +15,7 @@ function About() {
           development. I have a good understanding in programming languages.
         </div>
         <div className="py-10">
-          <h2 className="text-xl bg-gray-900">Education</h2>
+          <h2 className="text-xl">Education</h2>
         </div>
         <ResumeSection />
       </div>
