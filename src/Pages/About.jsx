@@ -4,6 +4,14 @@ import MoreInfo from "../Components/MoreInfo";
 import { ChevronDown } from "lucide-react";
 
 function About() {
+  let EducationSectionVisibility = false;
+
+  const displayEducationSection = (EducationSectionVisibility) => {
+    if (!EducationSectionVisibility) {
+      EducationSectionVisibility = true;
+    } else EducationSectionVisibility = false;
+  };
+
   return (
     <div className="py-44">
       <div className="text-center flex-col gap-10 items-start">
@@ -15,10 +23,14 @@ function About() {
           Computer Science and Engineering. I'm interested in the field of Web
           development. I have a good understanding in programming languages.
         </div>
-        <div className="my-10 flex justify-center gap-5 items-center cursor-pointer">
+        <div
+          className="my-10 flex justify-center gap-5 items-center cursor-pointer"
+          onClick={displayEducationSection()}
+        >
           <h2 className="text-xl">Education</h2>
           <ChevronDown />
         </div>
+        {EducationSectionVisibility && <MoreInfo />}
         <ResumeSection />
       </div>
     </div>
