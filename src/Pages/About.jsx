@@ -2,15 +2,16 @@ import React from "react";
 import ResumeSection from "../Components/ResumeSection";
 import MoreInfo from "../Components/MoreInfo";
 import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 function About() {
-  let EducationSectionVisibility = false;
+  const [moreInfoVisibility, setMoreInfoVisibility] = useState(false);
 
-  const displayEducationSection = (EducationSectionVisibility) => {
-    if (!EducationSectionVisibility) {
-      EducationSectionVisibility = true;
-    } else EducationSectionVisibility = false;
-  };
+  // const displaymoreInfo = () => {
+  //   if (!moreInfoVisibility) {
+  //     setMoreInfoVisibility(true);
+  //   } else setMoreInfoVisibility(false);
+  // };
 
   return (
     <div className="py-44">
@@ -25,12 +26,15 @@ function About() {
         </div>
         <div
           className="my-10 flex justify-center gap-5 items-center cursor-pointer"
-          onClick={displayEducationSection()}
+          onClick={() => {
+            if (!moreInfoVisibility) setMoreInfoVisibility(true);
+            else setMoreInfoVisibility(false);
+          }}
         >
           <h2 className="text-xl">Education</h2>
           <ChevronDown />
         </div>
-        {EducationSectionVisibility && <MoreInfo />}
+        {moreInfoVisibility && <MoreInfo />}
         <ResumeSection />
       </div>
     </div>
