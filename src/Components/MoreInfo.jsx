@@ -3,8 +3,8 @@ import React from "react";
 function MoreInfo() {
   return (
     <div>
-      <div>
-        <div>
+      <div className="text-lg flex-col text-left">
+        <div className="">
           <div>Highschool: Sri Ramakrishna Highschool Puttur</div>
           <div>2016-2019</div>
         </div>
