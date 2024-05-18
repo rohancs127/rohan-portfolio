@@ -1,13 +1,15 @@
 import React from "react";
 
 function ResumeSection() {
-    const handleDownload = () => {
-        const resumeUrl = 'resume/Rohan_Resume.pdf';
-        window.open(resumeUrl, '_blank');
-      };
+  const handleDownload = (e) => {
+    console.log(e);
+    e.preventDefault();
+    const resumeUrl = "resume/Rohan_Resume.pdf";
+    window.open(resumeUrl, "_blank");
+  };
   return (
     <div>
-      <button onClick={handleDownload()}>Resume</button>
+      <button onClick={handleDownload(event)}>Resume</button>
       <div>Download my resume here!</div>
     </div>
   );
