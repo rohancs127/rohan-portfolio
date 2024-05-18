@@ -9,7 +9,12 @@ function ResumeSection() {
   };
   return (
     <div>
-      <button onClick={handleDownload(event)}>Resume</button>
+      <button
+        className=" focus:outline-none relative left-0 right-0 bottom-0 font-bold bg-indigo-900 text-slate-200 border-none shadow hover:shadow-sm hover:shadow-indigo-400 transition-all duration-200 "
+        onClick={handleDownload(event)}
+      >
+        Resume
+      </button>
       <div>Download my resume here!</div>
     </div>
   );
