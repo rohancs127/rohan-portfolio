@@ -4,10 +4,13 @@ import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
 
-function Home() {
+function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
   return (
     <div>
-      <div className="flex w-full mt-32 mr-24 py-32 justify-center gap-60 items-center text-indigo-200">
+      <div
+        className="flex w-full pt-60 mb-32 mr-24 py-32 justify-center gap-60 items-center text-indigo-200"
+        ref={homeRef}
+      >
         <div>
           <img src="images/Rohan.jpg" width={300} className="rounded-full" />
         </div>
@@ -19,16 +22,16 @@ function Home() {
           </h3>
         </div>
       </div>
-      <div className="py-32">
+      <div className="py-32 pt-60" ref={skillRef}>
         <SkillSection />
       </div>
-      <div>
+      <div ref={aboutRef}>
         <About />
       </div>
-      <div>
+      <div ref={projectRef}>
         <Project />
       </div>
-      <div>
+      <div ref={contactRef}>
         <Contact />
       </div>
     </div>
