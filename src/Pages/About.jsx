@@ -14,7 +14,7 @@ function About() {
   // };
 
   return (
-    <div className="py-44">
+    <div className="pt-64">
       <div className="text-center flex-col gap-10 items-center">
         <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 inline-block">
           Know Me
