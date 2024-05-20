@@ -34,8 +34,10 @@ function About() {
           <h2 className="text-xl">Education</h2>
           <ChevronDown />
         </div>
-        {moreInfoVisibility && <MoreInfo />}
-        <ResumeSection />
+        <div>{moreInfoVisibility && <MoreInfo />}</div>
+        <div>
+          <ResumeSection />
+        </div>
       </div>
     </div>
   );
