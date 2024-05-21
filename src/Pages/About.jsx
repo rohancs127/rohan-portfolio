@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 function About() {
-  const [moreInfoVisibility, setMoreInfoVisibility] = useState(false);
+  const [educationInfoVisibility, setEducationInfoVisibility] = useState(false);
 
   // const displaymoreInfo = () => {
   //   if (!moreInfoVisibility) {
@@ -27,14 +27,14 @@ function About() {
         <div
           className="my-10 flex justify-center gap-5 items-center cursor-pointer"
           onClick={() => {
-            if (!moreInfoVisibility) setMoreInfoVisibility(true);
-            else setMoreInfoVisibility(false);
+            if (!educationInfoVisibility) setEducationInfoVisibility(true);
+            else setEducationInfoVisibility(false);
           }}
         >
           <h2 className="text-xl">Education</h2>
           <ChevronDown />
         </div>
-        <div>{moreInfoVisibility && <EducationInfo />}</div>
+        <div>{educationInfoVisibility && <EducationInfo />}</div>
         <div>
           <ResumeSection />
         </div>
