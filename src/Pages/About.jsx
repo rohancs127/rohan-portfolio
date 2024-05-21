@@ -1,6 +1,6 @@
 import React from "react";
 import ResumeSection from "../Components/ResumeSection";
-import MoreInfo from "../Components/MoreInfo";
+import EducationInfo from "../Components/EducationInfo";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -34,7 +34,7 @@ function About() {
           <h2 className="text-xl">Education</h2>
           <ChevronDown />
         </div>
-        <div>{moreInfoVisibility && <MoreInfo />}</div>
+        <div>{moreInfoVisibility && <EducationInfo />}</div>
         <div>
           <ResumeSection />
         </div>

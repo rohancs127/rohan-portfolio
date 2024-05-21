@@ -1,6 +1,6 @@
 import React from "react";
 
-function MoreInfo() {
+function EducationInfo() {
   return (
     <div>
       <div className="text-lg flex-col text-center mx-72 rounded-lg overflow-hidden mb-5 shadow shadow-md shadow-zinc-800">
@@ -22,4 +22,4 @@ function MoreInfo() {
   );
 }
 
-export default MoreInfo;
+export default EducationInfo;
