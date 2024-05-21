@@ -1,12 +1,10 @@
 import React from "react";
+import { scrollToSection } from "../js/scrollToSection";
 
 const navbarComponentStyle =
   "transtion-all duration-300 font-medium border-b-2 border-purple-950 hover:border-b-2 hover:border-neutral-300";
 
 const Navbar = ({ homeRef, skillRef, aboutRef, projectRef, contactRef }) => {
-  const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <div className="flex justify-end items-center gap-20 bg-purple-950 py-4 w-full px-10 mt-0 h-min fixed z-10 top-0">
       <ul
