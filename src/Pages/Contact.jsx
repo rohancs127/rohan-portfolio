@@ -9,6 +9,14 @@ function Contact() {
           Contact Me
         </h1>
       </div>
+      <div>
+        <div>Mail me</div>
+        <input type="email" placeholder="Enter email address" />
+        <div>
+          <input placeholder="Enter message" />
+          <button>Send</button>
+        </div>
+      </div>
       <div className="flex flex-wrap justify-center gap-10 mt-10">
         <SocialCard
           logo="../../src/assets/socialMediaLogo/github.svg"
