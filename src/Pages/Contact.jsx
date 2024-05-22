@@ -1,5 +1,6 @@
 import React from "react";
 import SocialCard from "../Components/SocialCard";
+import EmailSection from "../Components/EmailSection";
 
 function Contact() {
   return (
@@ -10,7 +11,7 @@ function Contact() {
         </h1>
       </div>
       <div>
-        
+        <EmailSection />
       </div>
       <div className="flex flex-wrap justify-center gap-10 mt-10">
         <SocialCard
