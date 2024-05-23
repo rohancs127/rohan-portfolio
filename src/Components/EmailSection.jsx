@@ -2,12 +2,12 @@ import React from "react";
 
 function EmailSection() {
   return (
-    <div>
-      <div>Mail me</div>
-      <input type="email" placeholder="Enter email address" />
-      <div>
-        <input placeholder="Enter message" />
-        <button>Send</button>
+    <div className="flex-col">
+      <div className="self-center">Mail me</div>
+      <div><input type="email" placeholder="Enter email address" /></div>
+      <div className="flex-col">
+        <div><input placeholder="Enter message" /></div>
+        <div><button>Send</button></div>
       </div>
     </div>
   );
