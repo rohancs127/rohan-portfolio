@@ -10,7 +10,7 @@ function Contact() {
           Contact Me
         </h1>
       </div>
-      <div>
+      <div className="flex justify-center">
         <EmailSection />
       </div>
       <div className="flex flex-wrap justify-center gap-10 mt-10">
