@@ -32,7 +32,7 @@ function About() {
           }}
         >
           <div>
-            <MoreInfoOption />
+            <MoreInfoOption InfoName="Education" />
           </div>
         </div>
         <div>{educationInfoVisibility && <EducationInfo />}</div>
