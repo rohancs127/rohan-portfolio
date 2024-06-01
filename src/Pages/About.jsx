@@ -24,15 +24,22 @@ function About() {
           Computer Science and Engineering. I'm interested in the field of Web
           development. I have a good understanding in programming languages.
         </div>
-        <div
-          className="my-10 flex justify-center gap-5 items-center cursor-pointer"
-          onClick={() => {
-            if (!educationInfoVisibility) setEducationInfoVisibility(true);
-            else setEducationInfoVisibility(false);
-          }}
-        >
-          <div>
-            <MoreInfoOption InfoName="Education" />
+        <div className="my-10">
+          <div className="flex gap-20 justify-center">
+            <div
+              onClick={() => {
+                if (!educationInfoVisibility) setEducationInfoVisibility(true);
+                else setEducationInfoVisibility(false);
+              }}
+            >
+              <MoreInfoOption InfoName="Education" />
+            </div>
+            <div>
+              <MoreInfoOption InfoName="Certificates" />
+            </div>
+            <div>
+              <MoreInfoOption InfoName="Sketches" />
+            </div>
           </div>
         </div>
         <div>{educationInfoVisibility && <EducationInfo />}</div>
