@@ -2,6 +2,7 @@ import React from "react";
 import ResumeSection from "../Components/ResumeSection";
 import EducationInfo from "../Components/EducationInfo";
 import MoreInfoOption from "../Components/MoreInfoOption";
+import CertificatesSection from "../Components/CertificatesSection";
 import { useState } from "react";
 
 function About() {
@@ -42,7 +43,10 @@ function About() {
             </div>
           </div>
         </div>
-        <div>{educationInfoVisibility && <EducationInfo />}</div>
+        <div>
+          {educationInfoVisibility && <EducationInfo />}
+          <CertificatesSection />
+        </div>
         <div>
           <ResumeSection />
         </div>

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import CertificateCard from "./CertificateCard";
 
 function CertificatesSection() {
   return (
-    <div></div>
-  )
+    <div>
+      <CertificateCard />
+      <CertificateCard />
+      <CertificateCard />
+    </div>
+  );
 }
 
-export default CertificatesSection
+export default CertificatesSection;
