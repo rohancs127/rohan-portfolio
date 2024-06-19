@@ -3,7 +3,7 @@ import CertificateCard from "./CertificateCard";
 
 function CertificatesSection() {
   return (
-    <div>
+    <div className="grid grid-flow-col gap-10 justify-center mb-32">
       <CertificateCard />
       <CertificateCard />
       <CertificateCard />
