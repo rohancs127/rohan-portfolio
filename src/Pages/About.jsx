@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function About() {
   const [educationInfoVisibility, setEducationInfoVisibility] = useState(false);
+  const [certificatesVisibility, setCertificatesVisibility] = useState(false);
 
   // const displaymoreInfo = () => {
   //   if (!moreInfoVisibility) {
@@ -29,13 +30,22 @@ function About() {
           <div className="flex gap-20 justify-center">
             <div
               onClick={() => {
-                if (!educationInfoVisibility) setEducationInfoVisibility(true);
-                else setEducationInfoVisibility(false);
+                if (!educationInfoVisibility) {
+                  setEducationInfoVisibility(true);
+                  setCertificatesVisibility(false);
+                } else setEducationInfoVisibility(false);
               }}
             >
               <MoreInfoOption InfoName="Education" />
             </div>
-            <div>
+            <div
+              onClick={() => {
+                if (!certificatesVisibility) {
+                  setCertificatesVisibility(true);
+                  setEducationInfoVisibility(false);
+                } else setCertificatesVisibility(false);
+              }}
+            >
               <MoreInfoOption InfoName="Certificates" />
             </div>
             <div>
@@ -45,7 +55,7 @@ function About() {
         </div>
         <div>
           {educationInfoVisibility && <EducationInfo />}
-          <CertificatesSection />
+          {certificatesVisibility && <CertificatesSection />}
         </div>
         <div>
           <ResumeSection />
