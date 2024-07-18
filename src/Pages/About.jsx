@@ -3,6 +3,7 @@ import ResumeSection from "../Components/ResumeSection";
 import EducationInfo from "../Components/EducationInfo";
 import MoreInfoOption from "../Components/MoreInfoOption";
 import CertificatesSection from "../Components/CertificatesSection";
+import SketchesSection from "../Components/SketchesSection";
 import { useState } from "react";
 
 function About() {
@@ -56,6 +57,7 @@ function About() {
         <div>
           {educationInfoVisibility && <EducationInfo />}
           {certificatesVisibility && <CertificatesSection />}
+          <SketchesSection />
         </div>
         <div>
           <ResumeSection />

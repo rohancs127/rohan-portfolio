@@ -5,6 +5,8 @@ function SketchesSection() {
   return (
     <div>
       <SketchCard />
+      <SketchCard />
+      <SketchCard />
     </div>
   );
 }
