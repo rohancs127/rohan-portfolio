@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function SketchCard() {
   return (
-    <div>SketchCard</div>
-  )
+    <div className=" bg-slate-600 h-52 w-52">
+      <img />
+    </div>
+  );
 }
 
-export default SketchCard
+export default SketchCard;
