@@ -3,7 +3,7 @@ import CertificateCard from "./CertificateCard";
 
 function CertificatesSection() {
   return (
-    <div className="flex gap-10 items-center justify-start my-20 overflow-x-auto scrollbar-hide ">
+    <div className="flex gap-10 items-center justify-start my-20 overflow-x-auto scrollbar-hide px-20 ">
       <CertificateCard />
       <CertificateCard />
       <CertificateCard />
