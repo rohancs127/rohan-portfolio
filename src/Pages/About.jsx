@@ -9,6 +9,8 @@ import { useState } from "react";
 function About() {
   const [educationInfoVisibility, setEducationInfoVisibility] = useState(false);
   const [certificatesVisibility, setCertificatesVisibility] = useState(false);
+  const [sketchesVisibility, setSketchesVisibility] = useState(false);
+
 
   // const displaymoreInfo = () => {
   //   if (!moreInfoVisibility) {
@@ -34,6 +36,7 @@ function About() {
                 if (!educationInfoVisibility) {
                   setEducationInfoVisibility(true);
                   setCertificatesVisibility(false);
+                  setSketchesVisibility(false);
                 } else setEducationInfoVisibility(false);
               }}
             >
@@ -44,12 +47,19 @@ function About() {
                 if (!certificatesVisibility) {
                   setCertificatesVisibility(true);
                   setEducationInfoVisibility(false);
+                  setSketchesVisibility(false)
                 } else setCertificatesVisibility(false);
               }}
             >
               <MoreInfoOption InfoName="Certificates" />
             </div>
-            <div>
+            <div onClick={() => {
+                if (!sketchesVisibility) {
+                  setSketchesVisibility(true);
+                  setCertificatesVisibility(false);
+                  setEdudactionInfoVisibility(false);
+                } else setSketchesVisibility(false);
+              }}>
               <MoreInfoOption InfoName="Sketches" />
             </div>
           </div>
@@ -57,7 +67,8 @@ function About() {
         <div>
           {educationInfoVisibility && <EducationInfo />}
           {certificatesVisibility && <CertificatesSection />}
-          <SketchesSection />
+          {sketchesVisibility && <SketchesSection />}
+          
         </div>
         <div>
           <ResumeSection />
