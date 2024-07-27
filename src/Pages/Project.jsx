@@ -22,6 +22,10 @@ function Project() {
           projectName="Certificate Generator"
           projectLink="https://github.com/rohancs127/Certificate-generator"
         />
+        <ProjectCard
+          projectName="Zomato Clone Website"
+          projectLink="https://github.com/rohancs127/Zomato-clone-website.git"
+        />
       </div>
     </div>
   );
