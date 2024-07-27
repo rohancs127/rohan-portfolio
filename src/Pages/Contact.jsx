@@ -4,7 +4,7 @@ import EmailSection from "../Components/EmailSection";
 
 function Contact() {
   return (
-    <div className="py-64">
+    <div className="pt-52 pb-40">
       <div className="flex justify-center p-10">
         <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300">
           Contact Me

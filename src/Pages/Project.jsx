@@ -3,7 +3,7 @@ import ProjectCard from "../Components/ProjectCard";
 
 function Project() {
   return (
-    <div>
+    <div className="pt-52">
       <div className="flex justify-center p-10">
         <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300">
           My Works
