@@ -6,7 +6,7 @@ import Contact from "./Contact";
 
 function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
   return (
-    <div className="">
+    <div className="max-sm:select-none">
       <div
         className="flex w-full pt-60 mb-32 mr-24 py-32 justify-center gap-60 items-center text-indigo-200 max-sm:gap-20 max-sm:pt-40 max-sm:flex-col max-sm:items-center"
         ref={homeRef}
@@ -26,7 +26,7 @@ function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
           </h3>
         </div>
       </div>
-      <div className="py-32 pt-60 max-sm:pt-32 " ref={skillRef}>
+      <div className="py-32 pt-60 max-sm:pt-20 " ref={skillRef}>
         <SkillSection />
       </div>
       <div ref={aboutRef}>

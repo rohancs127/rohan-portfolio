@@ -17,7 +17,7 @@ function EmailSection() {
           <textarea placeholder="Enter message" className="px-3 pr-16 resize-none outline-none overflow-hidden rounded-lg" />
         </div> */}
         <div className="mt-5">
-          <a href="mailto:rohankumar5803@gmail.com"><button className=" focus:outline-none relative left-0 right-0 bottom-0 font-bold bg-indigo-900 text-slate-200 border-none shadow hover:shadow-sm hover:shadow-indigo-400 transition-all duration-200 mb-3">Send</button></a>
+          <a href="mailto:rohankumar5803@gmail.com"><button className=" focus:outline-none relative left-0 right-0 bottom-0 font-bold bg-indigo-900 text-slate-200 border-none shadow hover:shadow-sm hover:shadow-indigo-400 transition-all duration-200 mb-3">Send email</button></a>
         </div>
       </div>
     </div>

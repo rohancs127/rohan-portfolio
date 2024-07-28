@@ -19,9 +19,9 @@ function About() {
   // };
 
   return (
-    <div className="pt-60">
+    <div className="pt-60 max-sm:pt-28">
       <div className="text-center flex-col gap-10 items-center">
-        <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 inline-block">
+        <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 inline-block max-sm:hover:tracking-wider">
           Know Me
         </h1>
         <div className="self-center text-2xl px-72 mt-16 max-sm:px-0 max-sm:mx-16">

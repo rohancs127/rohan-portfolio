@@ -5,7 +5,7 @@ function SkillSection() {
   return (
     <div>
       <div className="flex justify-center p-10">
-        <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300">
+        <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 max-sm:hover:tracking-wider">
           Skills
         </h1>
       </div>

@@ -4,9 +4,15 @@ export default {
   theme: {
     extend: {
       padding:{
-        '128': '32rem'
+        '128': '32rem',
       },
+      userSelect:{
+        none : 'none'
+      }
     },
+  },
+  variants: {
+    userSelect: ['responsive', 'focus'],
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };
