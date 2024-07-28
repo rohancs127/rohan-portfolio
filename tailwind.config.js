@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      padding:{
+        '128': '32rem'
+      },
+    },
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };
