@@ -9,7 +9,7 @@ function Project() {
           My Works
         </h1>
       </div>
-      <div className="flex gap-20 justify-center mt-14">
+      <div className="flex gap-20 justify-center mt-14 max-sm:flex-col max-sm:items-center">
         <ProjectCard
           projectName="Deepfake Voice Detection"
           projectLink="https://github.com/rohancs127/Deepfake_voice_detection"

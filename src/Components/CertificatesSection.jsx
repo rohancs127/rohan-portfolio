@@ -7,6 +7,7 @@ function CertificatesSection() {
       <CertificateCard certificateImage="src/assets/Certificates/Certificate1.jpg" certificateName="Responsive Website Basics: Code With HTML, CSS and Javascript by University Of London" />
       <CertificateCard certificateImage="src/assets/Certificates/Certificate2.jpg" certificateName="AI for Future Workforce Program by Intel Corporation"/>
       <CertificateCard certificateImage="src/assets/Certificates/Certificate3.jpg" certificateName="Outstanding Leadership and Dedication by Sahyadri College of Engineering and Management"/>
+      <CertificateCard certificateImage="src/assets/Certificates/Certificate4.jpeg" certificateName="Internship Completion Certificate by Technical Career Education"/>
     </div>
   );
 }

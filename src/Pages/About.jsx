@@ -24,13 +24,13 @@ function About() {
         <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 inline-block">
           Know Me
         </h1>
-        <div className="self-center text-2xl px-72 mt-16">
+        <div className="self-center text-2xl px-72 mt-16 max-sm:px-0 max-sm:mx-16">
           My name is Rohan. I'm pursuing my Bachelor of Engineering degree in
           Computer Science and Engineering. I'm interested in the field of Web
           development. I have a good understanding in programming languages.
         </div>
         <div className="my-10">
-          <div className="flex gap-20 justify-center">
+          <div className="flex gap-20 justify-center max-sm:flex-col max-sm:items-center max-sm:gap-10">
             <div
               onClick={() => {
                 if (!educationInfoVisibility) {
@@ -57,7 +57,7 @@ function About() {
                 if (!sketchesVisibility) {
                   setSketchesVisibility(true);
                   setCertificatesVisibility(false);
-                  setEdudactionInfoVisibility(false);
+                  setEducactionInfoVisibility(false);
                 } else setSketchesVisibility(false);
               }}>
               <MoreInfoOption InfoName="Sketches" />

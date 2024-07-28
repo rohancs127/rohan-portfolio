@@ -6,7 +6,7 @@ const navbarComponentStyle =
 
 const Navbar = ({ homeRef, skillRef, aboutRef, projectRef, contactRef }) => {
   return (
-    <div className="flex justify-end items-center gap-20 bg-purple-950 py-4 w-full px-10 mt-0 h-min fixed z-10 top-0">
+    <div className="flex justify-end items-center gap-20 bg-purple-950 py-4 w-full px-10 mt-0 h-min fixed z-10 top-0 max-sm:flex-col max-sm:w-fit max-sm:right-0 max-sm:bottom-0 max-sm:h-full max-sm:opacity-0">
       <ul
         className={navbarComponentStyle}
         onClick={() => scrollToSection(homeRef)}

@@ -9,7 +9,7 @@ function SkillSection() {
           Skills
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center max-sm:flex-col">
         <Skill image="../../src/assets/skillLogos/c++.svg" skill="C++" />
         <Skill image="../../src/assets/skillLogos/java.svg" skill="JAVA" />
         <Skill image="../../src/assets/skillLogos/python.svg" skill="PYTHON" />
