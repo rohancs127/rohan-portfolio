@@ -15,7 +15,7 @@ const screenWidth = window.innerWidth;
 
 const Navbar = ({ homeRef, skillRef, aboutRef, projectRef, contactRef }) => {
   return (
-    <div className="flex justify-end items-center gap-20 bg-purple-950 py-4 w-full px-10 mt-0 h-min fixed z-10 top-0 max-sm:w-max max-sm:gap-5 max-sm:text-xs max-sm:select-none max-sm:justify-center">
+    <div className="flex justify-end items-center gap-20 bg-purple-950 py-4 w-full px-10 mt-0 h-min fixed z-10 top-0 max-sm:w-full max-sm:gap-5 max-sm:text-xs max-sm:select-none max-sm:justify-around">
       <ul
         className={navbarComponentStyle}
         onClick={() => scrollToSection(homeRef)}
