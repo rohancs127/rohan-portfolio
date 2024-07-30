@@ -1,22 +1,16 @@
-import React from "react";
-import ResumeSection from "../Components/ResumeSection";
-import EducationInfo from "../Components/EducationInfo";
-import MoreInfoOption from "../Components/MoreInfoOption";
-import CertificatesSection from "../Components/CertificatesSection";
-import SketchesSection from "../Components/SketchesSection";
-import { useState } from "react";
+import React, { useState } from 'react';
+import ResumeSection from '../Components/ResumeSection';
+import EducationInfo from '../Components/EducationInfo';
+import MoreInfoOption from '../Components/MoreInfoOption';
+import CertificatesSection from '../Components/CertificatesSection';
+import SketchesSection from '../Components/SketchesSection';
 
 function About() {
-  const [educationInfoVisibility, setEducationInfoVisibility] = useState(false);
-  const [certificatesVisibility, setCertificatesVisibility] = useState(false);
-  const [sketchesVisibility, setSketchesVisibility] = useState(false);
+  const [openSection, setOpenSection] = useState(null);
 
-
-  // const displaymoreInfo = () => {
-  //   if (!moreInfoVisibility) {
-  //     setMoreInfoVisibility(true);
-  //   } else setMoreInfoVisibility(false);
-  // };
+  const handleSectionClick = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
 
   return (
     <div className="pt-72 max-sm:pt-28">
@@ -31,44 +25,21 @@ function About() {
         </div>
         <div className="my-10">
           <div className="flex gap-20 justify-center max-sm:flex-col max-sm:items-center max-sm:gap-10">
-            <div
-              onClick={() => {
-                if (!educationInfoVisibility) {
-                  setEducationInfoVisibility(true);
-                  setCertificatesVisibility(false);
-                  setSketchesVisibility(false);
-                } else setEducationInfoVisibility(false);
-              }}
-            >
-              <MoreInfoOption InfoName="Education" />
+            <div onClick={() => handleSectionClick('education')}>
+              <MoreInfoOption InfoName="Education" isOpen={openSection === 'education'} />
             </div>
-            <div
-              onClick={() => {
-                if (!certificatesVisibility) {
-                  setCertificatesVisibility(true);
-                  setEducationInfoVisibility(false);
-                  setSketchesVisibility(false)
-                } else setCertificatesVisibility(false);
-              }}
-            >
-              <MoreInfoOption InfoName="Certificates" />
+            <div onClick={() => handleSectionClick('certificates')}>
+              <MoreInfoOption InfoName="Certificates" isOpen={openSection === 'certificates'} />
             </div>
-            <div onClick={() => {
-                if (!sketchesVisibility) {
-                  setSketchesVisibility(true);
-                  setCertificatesVisibility(false);
-                  setEducactionInfoVisibility(false);
-                } else setSketchesVisibility(false);
-              }}>
-              <MoreInfoOption InfoName="Sketches" />
+            <div onClick={() => handleSectionClick('sketches')}>
+              <MoreInfoOption InfoName="Sketches" isOpen={openSection === 'sketches'} />
             </div>
           </div>
         </div>
         <div>
-          {educationInfoVisibility && <EducationInfo />}
-          {certificatesVisibility && <CertificatesSection />}
-          {sketchesVisibility && <SketchesSection />}
-          
+          {openSection === 'education' && <EducationInfo />}
+          {openSection === 'certificates' && <CertificatesSection />}
+          {openSection === 'sketches' && <SketchesSection />}
         </div>
         <div>
           <ResumeSection />
