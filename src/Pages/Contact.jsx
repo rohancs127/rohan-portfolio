@@ -4,7 +4,7 @@ import EmailSection from "../Components/EmailSection";
 
 function Contact() {
   return (
-    <div className="pt-52 pb-40 max-sm:pt-16">
+    <div className="pt-64 pb-64 max-sm:pt-16">
       <div className="flex justify-center p-10">
         <h1 className="font-bold text-indigo-300 hover:tracking-widest max-sm:hover:tracking-wider transition-all duration-300">
           Contact Me
