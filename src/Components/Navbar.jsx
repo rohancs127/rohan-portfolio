@@ -1,8 +1,17 @@
 import React from "react";
 import { scrollToSection } from "../js/scrollToSection";
 
+import { Home } from "lucide-react";
+import { Trophy } from "lucide-react";
+import { CircleUserRound } from "lucide-react";
+import { Laptop } from "lucide-react";
+import { Mail } from "lucide-react";
+
+
 const navbarComponentStyle =
   "transtion-all duration-300 font-medium border-b-2 border-purple-950 hover:border-b-2 hover:border-neutral-300";
+
+const screenWidth = window.innerWidth;
 
 const Navbar = ({ homeRef, skillRef, aboutRef, projectRef, contactRef }) => {
   return (
@@ -11,31 +20,36 @@ const Navbar = ({ homeRef, skillRef, aboutRef, projectRef, contactRef }) => {
         className={navbarComponentStyle}
         onClick={() => scrollToSection(homeRef)}
       >
-        Home
+        {(screenWidth>640) && "Home"}
+        {!(screenWidth>640) && <Home />}
       </ul>
       <ul
         className={navbarComponentStyle}
         onClick={() => scrollToSection(skillRef)}
       >
-        Skills
+        {(screenWidth>640) && "Skills"}
+        {!(screenWidth>640) && <Trophy />}
       </ul>
       <ul
         className={navbarComponentStyle}
         onClick={() => scrollToSection(aboutRef)}
       >
-        About Me
+        {(screenWidth>640) && "About me"}
+        {!(screenWidth>640) && <CircleUserRound />}
       </ul>
       <ul
         className={navbarComponentStyle}
         onClick={() => scrollToSection(projectRef)}
       >
-        My Projects
+        {(screenWidth>640) && "My Projects"}
+        {!(screenWidth>640) && <Laptop />}
       </ul>
       <ul
         className={navbarComponentStyle}
         onClick={() => scrollToSection(contactRef)}
       >
-        Contact Me
+        {(screenWidth>640) && "Contact Me"}
+        {!(screenWidth>640) && <Mail />}
       </ul>
     </div>
   );
