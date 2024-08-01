@@ -4,6 +4,8 @@ import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
 
+import myImage from '../assets/Profile/Rohan.jpg'
+
 function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
   return (
     <div className="max-sm:select-none">
@@ -13,7 +15,7 @@ function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
       >
         <div>
           <img
-            src="src/assets/Profile/Rohan.jpg"
+            src={myImage}
             width={300}
             className="rounded-full animate-slide-in-left max-sm:w-56"
           />

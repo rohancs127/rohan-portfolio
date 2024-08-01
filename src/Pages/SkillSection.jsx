@@ -1,6 +1,16 @@
 import React from "react";
 import Skill from "../Components/Skill";
 
+import cppImage from "../assets/skillLogos/c++.svg";
+import javaImage from "../assets/skillLogos/java.svg";
+import pythonImage from "../assets/skillLogos/python.svg";
+import htmlImage from "../assets/skillLogos/html.svg";
+import cssImage from "../assets/skillLogos/css.svg";
+import javascriptImage from "../assets/skillLogos/javascript.svg";
+import nodejsImage from "../assets/skillLogos/node-js.svg";
+import reactImage from "../assets/skillLogos/react.svg";
+import tailwindImage from "../assets/skillLogos/tailwind-css.svg";
+
 function SkillSection() {
   return (
     <div>
@@ -10,21 +20,15 @@ function SkillSection() {
         </h1>
       </div>
       <div className="flex flex-wrap justify-center max-sm:flex-col">
-        <Skill image="../../src/assets/skillLogos/c++.svg" skill="C++" />
-        <Skill image="../../src/assets/skillLogos/java.svg" skill="JAVA" />
-        <Skill image="../../src/assets/skillLogos/python.svg" skill="PYTHON" />
-        <Skill image="../../src/assets/skillLogos/html.svg" skill="HTML" />
-        <Skill image="../../src/assets/skillLogos/css.svg" skill="CSS" />
-        <Skill
-          image="../../src/assets/skillLogos/javascript.svg"
-          skill="JAVASCRIPT"
-        />
-        <Skill image="../../src/assets/skillLogos/node-js.svg" skill="NODEJS" />
-        <Skill image="../../src/assets/skillLogos/react.svg" skill="REACTJS" />
-        <Skill
-          image="../../src/assets/skillLogos/tailwind-css.svg"
-          skill="TAILWIND CSS"
-        />
+        <Skill image={cppImage} skill="C++" />
+        <Skill image={javaImage} skill="JAVA" />
+        <Skill image={pythonImage} skill="PYTHON" />
+        <Skill image={htmlImage} skill="HTML" />
+        <Skill image={cssImage} skill="CSS" />
+        <Skill image={javascriptImage} skill="JAVASCRIPT" />
+        <Skill image={nodejsImage} skill="NODEJS" />
+        <Skill image={reactImage} skill="REACTJS" />
+        <Skill image={tailwindImage} skill="TAILWIND CSS" />
       </div>
     </div>
   );

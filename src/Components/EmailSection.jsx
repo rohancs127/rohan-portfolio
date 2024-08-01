@@ -1,5 +1,7 @@
 import React from "react";
 
+import gmailImage from '../assets/socialMediaLogo/gmail.svg';
+
 function EmailSection() {
   return (
     <div className="flex-col text-center">
@@ -7,7 +9,7 @@ function EmailSection() {
       <div className="mt-5">
         {/* <input type="email" placeholder="Enter email address" className="outline-none px-3 py-1 rounded-lg"/> */}
         <div className="flex items-center gap-5 bg-gray-900 text-stone-100 border-purple-900 border border-opacity-50 rounded-md px-5 py-3">
-          <img src="src/assets/socialMediaLogo/gmail.svg" className="w-10 max-sm:w-7"/>
+          <img src={gmailImage} className="w-10 max-sm:w-7"/>
           <div>rohankumar5803@gmail.com</div>
         </div>
       </div>
