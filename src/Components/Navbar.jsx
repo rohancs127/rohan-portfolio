@@ -9,7 +9,7 @@ import { Mail } from "lucide-react";
 
 
 const navbarComponentStyle =
-  "transtion-all duration-300 font-medium border-b-2 border-purple-950 hover:border-b-2 hover:border-neutral-300";
+  "transtion-all duration-300 font-medium border-b-2 border-purple-950 hover:border-b-2 hover:border-neutral-300 cursor-pointer";
 
 const screenWidth = window.innerWidth;
 
