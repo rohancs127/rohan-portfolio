@@ -10,7 +10,7 @@ import instagramImage from "../assets/socialMediaLogo/instagram.svg";
 
 function Contact() {
   return (
-    <div className="pt-28 pb-40 max-sm:pt-16">
+    <div className="pt-40 md:max-2xl:pt-28 pb-40 max-sm:pt-16">
       <div className="flex justify-center p-10">
         <h1 className="font-bold text-indigo-300 hover:tracking-widest max-sm:hover:tracking-wider transition-all duration-300">
           Contact Me

@@ -10,7 +10,7 @@ function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
   return (
     <div className="max-sm:select-none flex-col justify-between">
       <div
-        className="flex w-full pt-36 pb-96 justify-center gap-32 items-center text-indigo-200 max-sm:gap-10 max-sm:pt-28 max-sm:flex-col max-sm:items-center"
+        className="flex w-full pt-64 pb-96 md:max-2xl:pt-32 justify-center gap-60 md:max-2xl:gap-32 items-center text-indigo-200 max-sm:gap-10 max-sm:pt-28 max-sm:flex-col max-sm:items-center"
         ref={homeRef}
       >
         <div>
@@ -28,7 +28,7 @@ function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
           </h3>
         </div>
       </div>
-      <div className="pt-40 max-sm:pt-20 " ref={skillRef}>
+      <div className="md:max-2xl:pt-40 pt-64 max-sm:pt-20 " ref={skillRef}>
         <SkillSection />
       </div>
       <div ref={aboutRef}>
