@@ -5,7 +5,7 @@ function Project() {
   return (
     <div className="pt-72 pb-40 max-sm:pt-16">
       <div className="flex justify-center p-10">
-        <h1 className="max-sm:font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 max-sm:hover:tracking-wider">
+        <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 max-sm:hover:tracking-wider">
           My Works
         </h1>
       </div>
