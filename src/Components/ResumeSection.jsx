@@ -4,7 +4,7 @@ function ResumeSection() {
   const handleDownload = (e) => {
     console.log(e);
     e.preventDefault();
-    const resumeUrl = "resume/Rohan_Resume.pdf";
+    const resumeUrl = "resume/Rohan_LatexResume.pdf";
     window.open(resumeUrl, "_blank");
   };
   return (
