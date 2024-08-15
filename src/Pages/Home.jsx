@@ -8,7 +8,7 @@ import myImage from '../assets/Profile/Rohan.jpg'
 
 function Home({ homeRef, skillRef, aboutRef, projectRef, contactRef }) {
   return (
-    <div className="max-sm:select-none flex-col justify-between">
+    <div className=" flex-col justify-between">
       <div
         className="flex w-full pt-64 pb-96 md:max-2xl:pt-32 justify-center gap-60 md:max-2xl:gap-32 items-center text-indigo-200 max-sm:gap-10 max-sm:pt-28 max-sm:flex-col max-sm:items-center"
         ref={homeRef}
