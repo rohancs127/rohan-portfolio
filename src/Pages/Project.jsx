@@ -9,7 +9,7 @@ function Project() {
           My Works
         </h1>
       </div>
-      <div className="flex gap-20 justify-center mt-14 max-sm:flex-col max-sm:items-center">
+      <div className="grid grid-cols-3 place-items-center gap-20 justify-center mt-14 max-sm:flex-col max-sm:items-center px-60">
       <ProjectCard
           projectName="Bus Reservation App"
           projectLink="https://github.com/rohancs127/Bus-Reservation-App"
