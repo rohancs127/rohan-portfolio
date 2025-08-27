@@ -1,42 +1,27 @@
+// tailwind.config.js
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      padding: {
-        128: "32rem",
+      colors: {
+        'navy-blue': '#0A192F',
+        'navy-light': '#112240',
+        'navy-lighter': '#233554',
+        'slate-lightest': '#CCD6F6',
+        'slate-light': '#A8B2D1',
+        'slate-dark': '#8892B0',
+        'cyan-400': '#64FFDA',
       },
-      userSelect: {
-        none: "none",
-      },
-      keyframes: {
-        "slide-in-right": {
-          "0%": { transform: "translateX(100%)", opacity: "0" },
-          "100%": { transform: "translateX(0)", opacity: "1" },
-        },
-        "slide-in-left": {
-          "0%": { transform: "translateX(-100%)", opacity: "0" },
-          "100%": { transform: "translateX(0)", opacity: "1" },
-        },
-        "slide-in-up": {
-          "0%": { transform: "translateY(100%)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
-        },
-        "slide-in-down": {
-          "0%": { transform: "translateY(-100%)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
-        },
-      },
-      animation: {
-        "slide-in-right": "slide-in-right 0.5s ease-out forwards",
-        "slide-in-left": "slide-in-left 0.5s ease-out forwards",
-        "slide-in-up": "slide-in-up 0.3s ease-out forwards",
-        "slide-in-down": "slide-in-down 0.5s ease-out forwards",
+      fontFamily: {
+        'sans': ['Poppins', 'sans-serif'],
+        'mono': ['SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'monospace'],
       },
     },
   },
-  variants: {
-    userSelect: ["responsive", "focus"],
-  },
-  plugins: [require("tailwind-scrollbar-hide")],
-};
+  plugins: [],
+}

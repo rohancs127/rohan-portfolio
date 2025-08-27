@@ -1,52 +1,33 @@
-import React, { useState } from 'react';
-import ResumeSection from '../Components/ResumeSection';
-import EducationInfo from '../Components/EducationInfo';
-import MoreInfoOption from '../Components/MoreInfoOption';
-import CertificatesSection from '../Components/CertificatesSection';
-import SketchesSection from '../Components/SketchesSection';
+// src/Pages/About.jsx
+import React, { forwardRef } from 'react';
+import Section from '../Components/Section';
+import SectionHeader from '../Components/SectionHeader';
+import { aboutMe } from '../data';
+import Skills from './Skills'; 
 
-function About() {
-  const [openSection, setOpenSection] = useState(null);
+// Assuming you have a profile image in assets
+import profileImage from '../assets/Profile/Rohan.jpg'; 
 
-  const handleSectionClick = (section) => {
-    setOpenSection(openSection === section ? null : section);
-  };
-
+const About = forwardRef((props, ref) => {
   return (
-    <div className="pt-64 md:max-2xl:pt-44 pb-48 max-sm:pt-28">
-      <div className="text-center flex-col gap-10 items-center">
-        <h1 className="font-bold text-indigo-300 hover:tracking-widest transition-all duration-300 inline-block max-sm:hover:tracking-wider">
-          Know Me
-        </h1>
-        <div className="self-center text-2xl px-72 mt-16 max-sm:px-0 max-sm:mx-16">
-          My name is Rohan. I'm pursuing my Bachelor of Engineering degree in
-          Computer Science and Engineering. I'm interested in the field of Web
-          development. I have a good understanding in programming languages.
+    <Section ref={ref}>
+      <SectionHeader number="01" title="About Me" />
+      <div className="grid md:grid-cols-5 gap-12">
+        <div className="md:col-span-3 text-slate-400 space-y-4">
+          <p>{aboutMe.paragraph1}</p>
+          <p>{aboutMe.paragraph2}</p>
+          <p>{aboutMe.leadership}</p>
         </div>
-        <div className="my-10">
-          <div className="flex gap-20 justify-center max-sm:flex-col max-sm:items-center max-sm:gap-10">
-            <div onClick={() => handleSectionClick('education')}>
-              <MoreInfoOption InfoName="Education" isOpen={openSection === 'education'} />
+        <div className="md:col-span-2 flex justify-center items-start">
+            <div className="relative w-64 h-64 rounded-lg group">
+                <div className="absolute inset-0 bg-cyan-400 rounded-lg transform transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                <img src={profileImage} alt="Rohan" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
             </div>
-            <div onClick={() => handleSectionClick('certificates')}>
-              <MoreInfoOption InfoName="Certificates" isOpen={openSection === 'certificates'} />
-            </div>
-            <div onClick={() => handleSectionClick('sketches')}>
-              <MoreInfoOption InfoName="Sketches" isOpen={openSection === 'sketches'} />
-            </div>
-          </div>
-        </div>
-        <div>
-          {openSection === 'education' && <EducationInfo />}
-          {openSection === 'certificates' && <CertificatesSection />}
-          {openSection === 'sketches' && <SketchesSection />}
-        </div>
-        <div>
-          <ResumeSection />
         </div>
       </div>
-    </div>
+      <Skills /> {/* Embedding skills section here */}
+    </Section>
   );
-}
+});
 
 export default About;

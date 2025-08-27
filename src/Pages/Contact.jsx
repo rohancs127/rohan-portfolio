@@ -1,67 +1,29 @@
-import React from "react";
-import SocialCard from "../Components/SocialCard";
-import EmailSection from "../Components/EmailSection";
+// src/Pages/Contact.jsx
+import React, { forwardRef } from 'react';
+import Section from '../Components/Section';
+import SectionHeader from '../Components/SectionHeader';
+import SocialIcons from '../Components/SocialIcon'; // <-- Import the component
+import { contactInfo } from '../data';
 
-import githubImage from "../assets/socialMediaLogo/github.svg";
-import linkedinImage from "../assets/socialMediaLogo/linked-in.svg";
-import xImage from "../assets/socialMediaLogo/twitterx.svg";
-import facebookImage from "../assets/socialMediaLogo/facebook.svg";
-import instagramImage from "../assets/socialMediaLogo/instagram.svg";
-
-function Contact() {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div className="pt-40 md:max-2xl:pt-28 pb-40 max-sm:pt-16">
-      <div className="flex justify-center p-10">
-        <h1 className="font-bold text-indigo-300 hover:tracking-widest max-sm:hover:tracking-wider transition-all duration-300">
-          Contact Me
-        </h1>
-      </div>
-      <div className="flex justify-center">
-        <EmailSection />
-      </div>
-      <div className="flex flex-wrap justify-center gap-10 mt-10 max-sm:gap-5">
-        <SocialCard
-          logo={githubImage}
-          account="GitHub"
-          link="https://github.com/rohancs127"
-          width="w-12 max-sm:w-7"
-        />
-        <SocialCard
-          logo={linkedinImage}
-          account="LinkedIn"
-          link="https://www.linkedin.com/in/rohan-44aa02228"
-          width="w-12 max-sm:w-7"
-        />
-        <SocialCard
-          logo={xImage}
-          account="X"
-          link="https://x.com/rohanKumar5803"
-          width="w-12 max-sm:w-7"
-        />
-        <SocialCard
-          logo={facebookImage}
-          account="Facebook"
-          link="https://www.facebook.com/profile.php?id=100012243734741"
-          width="w-12 max-sm:w-7"
-        />
-        <SocialCard
-          logo={instagramImage}
-          account="Instagram"
-          link="https://www.instagram.com/rohan__kumar._"
-          width="w-12 max-sm:w-7"
-        />
-      </div>
-      <div className="text-center mt-20">
-        <div>Source code available at</div>
-        <a href="https://github.com/rohancs127/rohan-portfolio.git">
-          <div className="flex items-center justify-center text-lg text-white cursor-pointer m-5">
-            <img src={githubImage} className="w-8" />
-            /rohancs127
-          </div>
-        </a>
-      </div>
-    </div>
+    <Section ref={ref} className="text-center max-w-2xl mx-auto">
+      <SectionHeader number="05" title="What's Next?" />
+      <h3 className="text-5xl font-bold text-slate-lightest mb-4">Get In Touch</h3>
+      <p className="text-slate-dark mb-8">
+        I'm currently open to new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I’ll get back to you!
+      </p>
+      <a
+        href={`mailto:${contactInfo.email}`}
+        className="inline-block bg-transparent border border-cyan-400 text-cyan-400 font-medium py-3 px-8 rounded-md hover:bg-cyan-400 hover:bg-opacity-10 transition-all duration-300"
+      >
+        Say Hello
+      </a>
+       <div className="mt-8 flex justify-center"> 
+         <SocialIcons />
+       </div>
+    </Section>
   );
-}
+});
 
 export default Contact;
