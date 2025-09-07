@@ -11,7 +11,7 @@ const Contact = forwardRef((props, ref) => {
       <SectionHeader number="05" title="What's Next?" />
       <h3 className="text-5xl font-bold text-slate-lightest mb-4">Get In Touch</h3>
       <p className="text-slate-dark mb-8">
-        I'm currently open to new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I’ll get back to you!
+      I enjoy discussing technology and innovation. If you have a question, want to connect, or just want to chat about the cloud, feel free to drop me a line.
       </p>
       <a
         href={`mailto:${contactInfo.email}`}

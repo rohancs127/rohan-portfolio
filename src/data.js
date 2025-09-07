@@ -37,8 +37,9 @@ export const experience = [
         company: "Niveus Solutions (Part of NTT Data)",
         date: "July 2025 - Present",
         description: [
-          "Contribute to significant cloud infrastructure and data modernization projects, encompassing cross-regional failover solutions and large-scale database migrations.",
-          "Develop and implement diverse DevOps automation scripts and Proof-of-Concepts (POCs) across multi-cloud environments, enhancing operational efficiency."
+          "Analyze customer on-premise and multi-cloud (AWS, Azure) systems to design tailored, cost-effective infrastructure and data modernization solutions on Google Cloud Platform.",
+          "Author comprehensive technical proposals that define project scope and serve as a blueprint for the development of the solution.",
+          "Develop and present Proof-of-Concepts (POCs) to validate proposed GCP solutions and demonstrate technical value to customers."
         ],
       },
   {
@@ -114,14 +115,14 @@ export const skills = {
 
 export const aboutMe = {
     paragraph1: "Hello! My name is Rohan. As a Cloud and DevOps enthusiast, I have a passion for building efficient, scalable, and resilient cloud infrastructure. My journey in tech has been driven by a curiosity for solving complex problems and a desire to leverage technology to create impactful solutions.",
-    paragraph2: "Currently working as a Cloud Associate at Niveus, I have hands-on experience with major cloud platforms like GCP, AWS, and Azure, contributing to data modernization projects and developing DevOps automation scripts.",
-    leadership: "I am also an active member of the Sahyadri Open Source Community (SOSC), where I contribute to open-source projects and conduct workshops on topics like Git, Python, and C++ for my peers."
+    paragraph2: "In my current role as a Cloud Associate under Customer Engineering at Niveus, I specialize in analyzing customer environments across different environments to architect tailored and cost-effective modernization solutions on Google Cloud. It's a role that perfectly blends technical discovery with strategic problem-solving.",
+    leadership: "During my academic years, I was an active member in the Sahyadri Open Source Community (SOSC). Contributing to open-source and mentoring peers through workshops on core development technologies like Git & Python was a formative experience that solidified my passion for collaborative tech and knowledge sharing."
 };
 
 export const contactInfo = {
     email: "rohankumar5803@gmail.com",
     github: "https://github.com/rohancs127",
-    linkedin: "https://www.linkedin.com/in/rohan-44aa02228",
+    linkedin: "https://www.linkedin.com/in/rohan-kumar-k-44aa02228",
     instagram: "https://www.instagram.com/rohan__kumar._",
     // Add other social links if you want
 };
